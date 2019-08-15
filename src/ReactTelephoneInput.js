@@ -18,12 +18,6 @@ const { find, propEq, equals, findIndex, startsWith } = R
 const { allCountries, iso2Lookup, allCountryCodes } = countryData
 let isModernBrowser = true
 
-if (typeof document !== 'undefined') {
-  isModernBrowser = Boolean(document.createElement('input').setSelectionRange)
-} else {
-  isModernBrowser = true
-}
-
 const keys = {
   UP: 38,
   DOWN: 40,
